@@ -16,9 +16,18 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+        body {
+            /* overflow-y: hidden; */
+            /* Hide vertical scrollbar */
+            overflow-x: hidden;
+            /* Hide horizontal scrollbar */
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="">
 
     <header class="mx-20">
 
@@ -75,28 +84,28 @@
         <div class="banner mt-6 ">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="/images/banner1.png" class="w-full" />
+                    <img src="./images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="/images/banner2.png" class="w-full" />
+                    <img src="./images/banner2.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <img src="/images/banner3.png" class="w-full" />
+                    <img src="./images/banner3.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                    <img src="/images/banner4.png" class="w-full" />
+                    <img src="./images/banner4.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
@@ -160,16 +169,25 @@
                             days
                         </div>
                         <div class="flex flex-col">
+                            <span class="mt-4"><i class="fa-solid fa-ellipsis-vertical fa-2xl"></i></span>
+                        </div>
+                        <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:10;"></span>
                             </span>
                             hours
                         </div>
                         <div class="flex flex-col">
+                            <span class="mt-4"><i class="fa-solid fa-ellipsis-vertical fa-2xl"></i></span>
+                        </div>
+                        <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:24;"></span>
                             </span>
                             min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="mt-4"><i class="fa-solid fa-ellipsis-vertical fa-2xl"></i></span>
                         </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
@@ -712,14 +730,14 @@
                     </div>
                 </div>
                 <!-- middle Pic -->
-                <div class="w-[400px]">
+                <div class="w-[350px] lg:w-[400px] m-auto">
                     <img src="./images/whychoose1.png" alt="">
                 </div>
 
                 <!-- Right side items -->
                 <div class="mr-5 lg:mr-10">
-                    <div class=" flex items-center flex-row-reverse w-[300px] lg:w-[450px] mb-4 ">
-                        <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                    <div class=" flex items-center flex-row-reverse lg:w-[450px] mb-4 ">
+                        <div class="mx-3 h-10 w-24 bg-gray-200 rounded-full flex items-center justify-center">
                             <i class="fa-solid fa-carrot"></i>
                         </div>
                         <div class="">
@@ -730,8 +748,8 @@
                         </div>
                     </div>
                     <div>
-                        <div class=" flex items-center flex-row-reverse gap-3  lg:w-[450px] mb-4">
-                            <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                        <div class=" flex items-center flex-row-reverse   lg:w-[450px] mb-4">
+                            <div class="mx-3 h-10 w-24 bg-gray-200 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-ice-cream"></i>
                             </div>
                             <div>
@@ -743,8 +761,8 @@
                         </div>
                     </div>
                     <div>
-                        <div class=" flex items-center flex-row-reverse gap-3  lg:w-[450px] mb-4">
-                            <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                        <div class=" flex items-center flex-row-reverse   lg:w-[450px] mb-4">
+                            <div class="mx-3 h-10 w-24 bg-gray-200 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-thumbs-up"></i>
                             </div>
                             <div>
