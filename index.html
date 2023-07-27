@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font Asower -->
+    <!-- <script src="https://kit.fontawesome.com/1a085fcb68.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header class="mx-20">
+
+        <div class="flex flex-row-reverse gap-9 mt-[2rem] rounded-[600px] py-4 lg:invisible">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:mr-16" fill="none" viewBox="0 0 24 24"
+                        stroke="#121212">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu right-0 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-row justify-center items-center px-8">
+                <img src="./images/logo.png" width="54px" height="60px" alt="" />
+                <a class="btn btn-ghost normal-case text-[20px] font-bold text-[#121212]">Fruit Burst</a>
+            </div>
+        </div>
+
+
+        <!-- nav for lerge device -->
+        <div class="navbar bg-red-500 mt-[-6rem] rounded-full text-white h-16 lg:visible invisible">
+            <div class="navbar-start">
+                <div class="">
+                    <ul tabindex="0" class="menu menu-sm  flex-row gap-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <img src="./images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end mr-8 h-11  ">
+
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-64 md:w-auto rounded-full" />
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- banner and slider -->
+        <div class="banner mt-6 ">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-text mt-[-6rem] lg:mt-[-20rem] w-[300px] lg:h-44 lg:w-[1000px] items-center m-auto">
+                <div class="flex flex-col justify-center items-center -translate-y-1/3 ">
+                    <h1 class="lg:text-[72px] font-extrabold text-white text-center">
+                        Exotic tastes at your <br />
+                        doorstep
+                    </h1>
+                    <p class="lg:text-[20px] font-medium text-white text-center lg:py-8">
+                        We supply highly quality organic products
+                    </p>
+                    <button class="px-4 py-2 my-2 lg:px-8 lg:py-5 bg-[#F85559] text-white rounded-lg">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class=" grid-cols-5 relative bg-white mt-24 w-[60rem] m-auto rounded-md hidden lg:grid">
+            <div>
+                <img src="./images/fruit1.png" alt="">
+                <h2>Strawberry</h2>
+            </div>
+            <div>
+                <img src="./images/fruit2.png" alt="">
+                <h2>Orange</h2>
+            </div>
+            <div>
+                <img src="./images/fruit3.png" alt="">
+                <h2>Orange</h2>
+            </div>
+            <div>
+                <img src="./images/fruit4.png" alt="">
+                <h2>Strawberry</h2>
+            </div>
+            <div>
+                <img src="./images/fruit5.png" alt="">
+                <h2>Mangos</h2>
+            </div>
+        </div>
+
+        <!-- deal of the day -->
+        <div class="deal lg:mt-44 ">
+            <div class="deal-upper lg:flex justify-around">
+
+                <div class="deal-upper-left w-96 m-auto text-center lg:text-start lg:m-0">
+                    <h2 class="font-extrabold text-3xl mb-4 ">Deal of The Day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old</p>
+                </div>
+                <div class="deal-upper-right w-72 m-auto lg:text-start lg:m-0">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:54;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fruits Section -->
+            <div class="deal-lower lg:flex w-11/12 mx-auto lg:mx-20  lg:justify-evenly lg:gap-3">
+                <div class="fruits h-80 w-80 bg-gray-100 text-center border-slate-300 rounded-lg pt-4">
+                    <img class=" m-auto" src="./images/fruit6.png" alt="">
+                    <h2 class="font-extrabold text-lg">12.90$ - 18.85$</h2>
+                    <p class="font-medium text-base">Apples</p>
+                    <!-- rating -->
+
+                    <div class="flex items-center space-x-1 justify-center mt-5">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+
+                    <!-- details -->
+                    <button class="btn" onclick="my_modal_6.showModal()">Details</button>
+                    <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle ">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="/images/fruit6.png" alt="Apples" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Apples</h2>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <!-- rating -->
+
+                                    <div class="flex items-center space-x-1 justify-center mt-5">
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-ghost">Close</button>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </dialog>
+
+                </div>
+                <div class="fruits h-80 w-80 text-center bg-gray-100 border-slate-300 rounded-lg pt-4">
+                    <img class=" m-auto" src="./images/fruit7.png" alt="">
+                    <h2 class="font-extrabold text-lg">12.90$ - 18.85$</h2>
+                    <p class="font-medium text-base">Orange</p>
+                    <!-- rating -->
+
+                    <div class="flex items-center space-x-1 justify-center mt-5">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+
+                    <!-- details -->
+                    <button class="btn" onclick="my_modal_7.showModal()">Details</button>
+                    <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle ">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="/images/fruit7.png" alt="Apples" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Orange</h2>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <!-- rating -->
+
+                                    <div class="flex items-center space-x-1 justify-center mt-5">
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-ghost">Close</button>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </dialog>
+
+                </div>
+                <div class="fruits h-80 w-80 text-center bg-gray-100 border-slate-300 rounded-lg pt-4">
+                    <img class=" m-auto" src="./images/fruit8.png" alt="">
+                    <h2 class="font-extrabold text-lg">12.90$ - 18.85$</h2>
+                    <p class="font-medium text-base">Red Dragon</p>
+
+                    <!-- rating -->
+
+                    <div class="flex items-center space-x-1 justify-center mt-5">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <!-- details -->
+                    <button class="btn" onclick="my_modal_8.showModal()">Details</button>
+                    <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle ">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="/images/fruit8.png" alt="Apples" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Red Dragon</h2>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <!-- rating -->
+
+                                    <div class="flex items-center space-x-1 justify-center mt-5">
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-ghost">Close</button>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </dialog>
+
+                </div>
+                <div class="fruits h-80 w-80 text-center bg-gray-100 border-slate-300 rounded-lg pt-4">
+                    <img class=" m-auto" src="./images/fruit9.png" alt="">
+                    <h2 class="font-extrabold text-lg">12.90$ - 18.85$</h2>
+                    <p class="font-medium text-base">Banana</p>
+
+                    <!-- rating -->
+
+                    <div class="flex items-center space-x-1 justify-center mt-5">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <!-- details -->
+                    <button class="btn" onclick="my_modal_9.showModal()">Details</button>
+                    <dialog id="my_modal_9" class="modal modal-bottom sm:modal-middle ">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="/images/fruit9.png" alt="Apples" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Banana</h2>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh
+                                        fruits.</p>
+                                    <!-- rating -->
+
+                                    <div class="flex items-center space-x-1 justify-center mt-5">
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-ghost">Close</button>
+                                        <button class="btn btn-primary">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </dialog>
+
+                </div>
+            </div>
+
+            <div class="button w-40 m-auto my-11">
+                <button class="px-4 py-2 my-2 lg:px-8 lg:py-5 bg-[#F85559] text-white rounded-lg">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+
+        <!-- meet the teams -->
+        <section class="mt-[7rem] px-8">
+            <div>
+                <div class="hero min-h-screen rounded-lg object-fill" style="background-image: url(/images/team.png)">
+                    <div class="hero-overlay bg-opacity-70 brightness-50 rounded-lg"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="">
+                            <div class="flex flex-col justify-center">
+                                <div class="my-[5rem]">
+                                    <h1 class="text-[48px] font-extrabold text-white py-8">
+                                        Meet the team section
+                                    </h1>
+                                    <p class="text-[16px] font-medium text-white">
+                                        Contrary to popular belief, is not simply random text. It
+                                        has roots in a piece of classical <br />
+                                        Latin literature from 45 BC, making it over 2000 years
+                                        old.
+                                    </p>
+                                </div>
+
+                                <!-- Member -->
+                                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-28">
+                                    <!-- item one -->
+                                    <div class="">
+                                        <div class="flex justify-center">
+                                            <img src="/images/member1.png" alt="" />
+                                        </div>
+                                        <h2 class="text-[24px] font-bold text-white pt-4">
+                                            Awlad Hossain
+                                        </h2>
+                                        <p class="text-[16]px font-bold text-white py-4">
+                                            Fruits Expert
+                                        </p>
+                                        <div
+                                            class="flex lg:justify-between md:justify-evenly justify-center lg:gap-0 md:gap-0 gap-8">
+                                            <i
+                                                class="fa-brands fa-facebook-f bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-instagram bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-twitter bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-linkedin-in bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- item two -->
+                                    <div class="">
+                                        <div class="flex justify-center">
+                                            <img src="/images/member2.png" alt="" />
+                                        </div>
+                                        <h2 class="text-[24px] font-bold text-white pt-4">
+                                            Safia Chowdhury
+                                        </h2>
+                                        <p class="text-[16]px font-bold text-white py-4">
+                                            Fruits Expert
+                                        </p>
+                                        <div
+                                            class="flex lg:justify-between md:justify-evenly justify-center lg:gap-0 md:gap-0 gap-8">
+                                            <i
+                                                class="fa-brands fa-facebook bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-instagram bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-twitter bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-linkedin-in bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- item three -->
+
+                                    <div class="">
+                                        <div class="flex justify-center">
+                                            <img src="/images/member3.png" alt="" />
+                                        </div>
+                                        <h2 class="text-[24px] font-bold text-white pt-4">
+                                            Rokib Hossain
+                                        </h2>
+                                        <p class="text-[16]px font-bold text-white py-4">
+                                            Fruits Expert
+                                        </p>
+                                        <div
+                                            class="flex lg:justify-between md:justify-evenly justify-center lg:gap-0 md:gap-0 gap-8">
+                                            <i
+                                                class="fa-brands fa-facebook-f bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-instagram bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-twitter bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-linkedin-in bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- item one -->
+
+                                    <div class="">
+                                        <div class="flex justify-center">
+                                            <img src="/images/member4.png" alt="" />
+                                        </div>
+                                        <h2 class="text-[24px] font-bold text-white pt-4">
+                                            Chaity
+                                        </h2>
+                                        <p class="text-[16]px font-bold text-white py-4">
+                                            Fruits Expert
+                                        </p>
+                                        <div
+                                            class="flex lg:justify-between md:justify-evenly justify-center lg:gap-0 md:gap-0 gap-8">
+                                            <i
+                                                class="fa-brands fa-facebook-f bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-instagram bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-twitter bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                            <i
+                                                class="fa-brands fa-linkedin-in bg-[#F85559] w-8 h-8 rounded-full text-center pt-[7px] cursor-pointer"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- item two -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="choose-us mt-7 ">
+            <div class="choose-us-title w-[300px] lg:w-[600px] m-auto ">
+                <h2 class="font-extrabold text-5xl text-center">Why Choose Us</h2>
+                <p class="font-medium text-base text-center my-6 text-gray-400">Contrary to popular belief, is not
+                    simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                    2000 years old.</p>
+            </div>
+
+            <!-- Why Choose Us main section -->
+            <div class="lg:flex mb-5">
+
+                <div class="ml-10 ">
+                    <div class=" flex items-center w-[350px] lg:w-[450px] mb-4">
+                        <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <div class="">
+                            <h2 class="text-black font-extrabold text-xl ">Dedicated Team</h2>
+                            <hr class="w-28 h-[2px] my-1  bg-gray-600 border-0">
+                            <p class="font-medium text-base"> Professional employees are there for you to pick the most
+                                amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" flex items-center gap-3 w-[350px] lg:w-[450px] mb-4">
+                            <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-heart-circle-bolt"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-black font-extrabold text-xl ">Fresh is Best</h2>
+                                <hr class="w-28 h-[2px] my-1  bg-gray-600 border-0">
+                                <p class="font-medium text-base">Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" flex items-center gap-3 w-[350px] lg:w-[450px] mb-4">
+                            <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-gifts"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-black font-extrabold text-xl">Gift Certificates</h2>
+                                <hr class="w-28 h-[2px] my-1  bg-gray-600 border-0">
+                                <p class="font-medium text-base">Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- middle Pic -->
+                <div class="w-[400px]">
+                    <img src="./images/whychoose1.png" alt="">
+                </div>
+
+                <!-- Right side items -->
+                <div class="mr-5 lg:mr-10">
+                    <div class=" flex items-center flex-row-reverse w-[300px] lg:w-[450px] mb-4 ">
+                        <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-carrot"></i>
+                        </div>
+                        <div class="">
+                            <h2 class="text-black font-extrabold text-xl text-right">Integrated Supplier</h2>
+                            <hr class="w-28 h-[2px] my-1 ml-72 bg-gray-600 border-0 ">
+                            <p class="font-medium text-base text-right "> Professional employees are there for you to
+                                pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" flex items-center flex-row-reverse gap-3  lg:w-[450px] mb-4">
+                            <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-ice-cream"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-black font-extrabold text-xl text-right">Sustainable Practice</h2>
+                                <hr class="w-28 h-[2px] my-1 ml-72 bg-gray-600 border-0">
+                                <p class="font-medium text-base text-right">Professional employees are there for you to
+                                    pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" flex items-center flex-row-reverse gap-3  lg:w-[450px] mb-4">
+                            <div class="mx-3 h-10 w-16 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-black font-extrabold text-xl text-right">The Benefits Only</h2>
+                                <hr class="w-28 h-[2px] my-1  bg-gray-600 border-0 ml-72">
+                                <p class="font-medium text-base text-right">Professional employees are there for you to
+                                    pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="w-full h-96 bg-black">
+        <div class="logo flex justify-center pt-10 gap-2">
+            <img src="./images/logo.png" alt="">
+            <h2 class="font-bold text-white text-4xl text-center pt-3">Fruit Burst</h2>
+        </div>
+
+        <div class="footer-nav w-[32rem] lg:m-auto  lg:gap-10 ">
+            <ul class="menu  menu-horizontal bg-black text-white rounded-box mt-8 ">
+                <li><a class="px-2 lg:px-4">Home</a></li>
+                <li><a class="px-2 lg:px-4">About Us</a></li>
+                <li><a class="px-2 lg:px-4">Shop</a></li>
+                <li><a class="px-2 lg:px-4">All Fruits</a></li>
+                <li><a class="px-2 lg:px-4">Support</a></li>
+                <li><a class="px-2 lg:px-4">My Account </a></li>
+            </ul>
+        </div>
+
+        <div class="social-logo w-[32rem] m-auto pl-4 lg:pl-16">
+            <ul class="menu  menu-horizontal bg-black text-white rounded-box mt-8 ">
+                <li class=""><i class="fa-brands fa-twitter fa-2xl"></i></li>
+                <li class=""><i class="fa-brands fa-facebook fa-2xl"></i></li>
+                <li class=""><i class="fa-brands fa-youtube fa-2xl"></i></li>
+                <li class=""><i class="fa-brands fa-linkedin-in fa-2xl"></i></li>
+                <li class=""><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                <li class=""><i class="fa-brands fa-apple fa-2xl"></i></li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
