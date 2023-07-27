@@ -42,15 +42,15 @@
                 </label>
                 <ul tabindex="0"
                     class="menu right-0 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
+
                 </ul>
             </div>
             <div class="flex flex-row justify-center items-center px-8">
                 <img src="./images/logo.png" width="54px" height="60px" alt="" />
-                <a class="btn btn-ghost normal-case text-[20px] font-bold text-[#121212]">Fruit Burst</a>
+                <a href="#" class="btn btn-ghost normal-case text-[20px] font-bold text-[#121212]">Fruit Burst</a>
             </div>
         </div>
+
 
 
         <!-- nav for lerge device -->
@@ -71,8 +71,23 @@
             </div>
             <div class="navbar-end mr-8 h-11  ">
 
-                <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-64 md:w-auto rounded-full" />
+                <div class="form-control relative rounded-full">
+                    <!-- <input type="text" placeholder="Search Here" class="input input-bordered w-64 md:w-auto rounded-full relative" /> -->
+                    <form method="GET">
+                        <div class="relative text-gray-600 focus-within:text-gray-400 rounded-full">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
+                                </button>
+                            </span>
+                            <input type="search" name="q"
+                                class="py-2 text-sm text-white  rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900"
+                                placeholder="Search..." autocomplete="off">
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -86,8 +101,8 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        <a href="#slide4" class=" items-center bg-gray-500 w-5 h-6 rounded-md">❮</a>
+                        <a href="#slide2" class=" items-center bg-gray-500 w-5 h-6 rounded-md">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
@@ -161,7 +176,7 @@
                         Latin literature from 45 BC, making it over 2000 years old</p>
                 </div>
                 <div class="deal-upper-right w-72 m-auto lg:text-start lg:m-0">
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="grid grid-flow-col gap-1 lg:gap-5 text-center auto-cols-max sm:">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
@@ -239,7 +254,7 @@
                     <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle ">
                         <form method="dialog" class="modal-box">
                             <div class="card w-96 bg-base-100 shadow-xl">
-                                <figure class="px-10 pt-10">
+                                <figure class="lg:px-10 lg:pt-10">
                                     <img src="/images/fruit6.png" alt="Apples" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
@@ -574,7 +589,7 @@
                                     <!-- item one -->
                                     <div class="">
                                         <div class="flex justify-center">
-                                            <img src="/images/member1.png" alt="" />
+                                            <img src="./images/member1.png" alt="" />
                                         </div>
                                         <h2 class="text-[24px] font-bold text-white pt-4">
                                             Awlad Hossain
@@ -598,7 +613,7 @@
                                     <!-- item two -->
                                     <div class="">
                                         <div class="flex justify-center">
-                                            <img src="/images/member2.png" alt="" />
+                                            <img src="./images/member2.png" alt="" />
                                         </div>
                                         <h2 class="text-[24px] font-bold text-white pt-4">
                                             Safia Chowdhury
@@ -623,7 +638,7 @@
 
                                     <div class="">
                                         <div class="flex justify-center">
-                                            <img src="/images/member3.png" alt="" />
+                                            <img src="./images/member3.png" alt="" />
                                         </div>
                                         <h2 class="text-[24px] font-bold text-white pt-4">
                                             Rokib Hossain
@@ -648,7 +663,7 @@
 
                                     <div class="">
                                         <div class="flex justify-center">
-                                            <img src="/images/member4.png" alt="" />
+                                            <img src="./images/member4.png" alt="" />
                                         </div>
                                         <h2 class="text-[24px] font-bold text-white pt-4">
                                             Chaity
